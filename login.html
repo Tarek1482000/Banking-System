@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="CSS.css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="name">Tarek Online Bank</div>
+      <ul>
+        <li><a id="Home_login" href="index.html">Home</a></li>
+        <li>
+          <a id="UserTransaction" href="UserTransaction.html"
+            >User Transaction</a
+          >
+        </li>
+        <li><a id="Contactus" href="ContactUs.html">Contact Us</a></li>
+        <li><a id="About" href="AboutUs.html">About Us</a></li>
+        <li><a id="Login" href="login.html">Login</a></li>
+      </ul>
+    </header>
+    <div id="user"></div>
+    <button id="Logout" onclick="LogoutFunc()">Logout</button>
+    <style>
+      body {
+        background-image: url("");
+        background-color: #02102a;
+
+        margin-bottom: -10%;
+      }
+
+      header ul li a:hover,
+      #Login {
+        background: white;
+        color: black;
+        letter-spacing: 1.2px;
+      }
+    </style>
+    <div id="SignIn">
+      <div id="SignIn_login">Login</div>
+      <input type="email" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button id="LoginBtn" onclick="LoginStart()">Log In</button>
+      <button id="SignUpBtn" onclick="redirectToLink('signup.html')">
+        Sign Up
+      </button>
+    </div>
+    <div class="SignUp"></div>
+
+    <div id="BalanceBox">
+      <div id="Ba">Balance</div>
+      <div id="money"></div>
+      <div id="EGP">EGP</div>
+    </div>
+    <script src="JavaScript.js"></script>
+  </body>
+</html>

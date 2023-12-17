@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="CSS.css" />
+  </head>
+  <body>
+    <header>
+      <div id="name">Tarek Online Bank</div>
+      <ul>
+        <li><a id="HomeU" href="index.html">Home</a></li>
+        <li>
+          <a id="UserTransaction" href="UserTransaction.html"
+            >User Transaction</a
+          >
+        </li>
+        <li><a id="Contactus" href="ContactUs.html">Contact Us</a></li>
+        <li><a id="Aboutus" href="AboutUs.html">About Us</a></li>
+        <li><a id="Login" href="login.html">Login</a></li>
+      </ul>
+    </header>
+    <style>
+      body {
+        background-image: url("Img/transaction.png");
+        background-color: #02102a;
+      }
+
+      header ul li a:hover,
+      #UserTransaction {
+        background: white;
+        color: black;
+        letter-spacing: 1.2px;
+      }
+    </style>
+
+    <div id="DoTransfer">
+      <h2 id="transferToText" for="transferTo">Username Transfer to:</h2>
+      <input
+        type="text"
+        id="transferTo"
+        placeholder="Enter username"
+        required
+      />
+      <h2 id="amountText" for="amount">Amount:</h2>
+      <input type="number" id="amount" placeholder="Enter amount" required />
+      <input type="password" id="password_T" placeholder="Your Password" />
+      <button type="button" id="transferbtn" onclick="performTransfer()">
+        Transfer
+      </button>
+    </div>
+
+    <div id="Trasfare_Info">
+      <button id="Transfere_view" onclick="viewHistory()">View History</button>
+      <button id="Transfere_Hide" style="display: none" onclick="HideHistory()">
+        Hide History
+      </button>
+      <button
+        id="DeleteHistory"
+        style="display: none"
+        onclick=" DeleteHistoryy()"
+      >
+        Delete History
+      </button>
+      <div id="viewww" style="display: none">
+        <table id="tableInfo">
+          <tr>
+            <th>User</th>
+            <th>Transfere to</th>
+            <th>Transfere from</th>
+            <th>Amount</th>
+          </tr>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="JavaScript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="CSS.css" />
+  </head>
+  <body>
+    <header>
+      <div id="name">Tarek Online Bank</div>
+      <div id="Contact_Email">Email: TarekBank@gmail.com</div>
+      <ul>
+        <li><a id="Home_contact" href="index.html">Home</a></li>
+        <li>
+          <a id="UserTransaction" href="UserTransaction.html"
+            >User Transaction</a
+          >
+        </li>
+        <li><a id="Contactus" href="ContactUs.html">Contact Us</a></li>
+        <li><a id="Aboutus" href="AboutUs.html">About Us</a></li>
+        <li><a id="Login" href="login.html">Login</a></li>
+      </ul>
+    </header>
+    <style>
+      body {
+        background-image: url("img/Contactus.png");
+        background-color: #02102a;
+      }
+
+      header ul li a:hover,
+      #Contactus {
+        background: white;
+        color: black;
+        letter-spacing: 1.2px;
+      }
+    </style>
+
+    <div id="contactt">
+      <input id="contact_msg" type="text" placeholder="Msg" />
+      <button id="submit_contact_msg" onclick="ReceiveMsgg()">Submit</button>
+    </div>
+
+    <script>
+      function ReceiveMsgg() {
+        if (contact_msg.value !== "") {
+          contact_msg.value = "";
+          contact_msg.placeholder = "Msg Sent Successfully😀";
+        }
+      }
+    </script>
+
+    <script src="JavaScript.js"></script>
+  </body>
+</html>

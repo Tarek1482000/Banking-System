@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("Img/Home.png"); /* Adjust the path and filename */
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  font-family: Georgia;
+  width: 95%;
+  margin: auto;
+}
+
+header {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header #name {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+header ul li {
+  margin: 15px 15px;
+}
+
+header ul li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 15px 15px;
+  border-radius: 65px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#optimize {
+  margin: 433px 0px;
+  text-align: left;
+  font-family: system-ui;
+  color: white;
+  width: 95%;
+  word-spacing: 5px;
+  line-height: 60px;
+  font-size: 20px;
+}
+
+header ul li a:hover,
+#Home {
+  background: white;
+  color: black;
+  letter-spacing: 1.2px;
+}
+
+#BalanceBox {
+  background-color: rgb(42, 96, 150);
+  font-size: 40px;
+  color: white;
+  margin: 17% 35%;
+  padding: 30px;
+  height: 300px;
+  width: 500px;
+  border-radius: 50px;
+  text-align: center;
+}
+#Ba {
+  margin-bottom: 50px;
+}
+#money,
+#EGP {
+  display: inline;
+  font-family: system-ui;
+}
+
+#SignIn {
+  background-color: rgb(42, 96, 150);
+  font-size: 40px;
+  color: white;
+  margin: 10% 40%;
+  padding: 30px;
+  height: 240px;
+  width: 300px;
+  border-radius: 50px;
+}
+#username {
+  padding: 10px;
+  border-radius: 150px;
+  width: 250px;
+  outline: none;
+  border: none;
+}
+#password,
+#password2,
+#password_T {
+  padding: 10px;
+  border-radius: 150px;
+  width: 250px;
+  outline: none;
+  border: none;
+}
+#SignIn button {
+  margin: 4% 0%;
+  padding: 15px 25px;
+  border-radius: 150px;
+  width: 110px;
+  display: block;
+  cursor: pointer;
+  transition: 0.5s;
+  outline: none;
+  border: none;
+}
+#SignIn button:hover {
+  letter-spacing: 1.5px;
+}
+#SignIn ::placeholder {
+  color: black;
+}
+#AboutUss {
+  position: absolute;
+  color: white;
+  margin: 0px 30px;
+}
+#AboutUss h3 {
+  position: relative;
+  top: 510px;
+  font-family: system-ui;
+  color: white;
+  width: 95%;
+  word-spacing: 5px;
+  line-height: 60px;
+  font-size: 20px;
+}
+
+#contactt {
+  margin: 0px 40px;
+}
+#contactt input {
+  padding: 50px 50px;
+  margin: 10px 0px;
+  display: block;
+  outline: none;
+  border: none;
+}
+
+#contactt button {
+  padding: 20px 30px;
+  font-size: 20px;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#contactt button:hover {
+  letter-spacing: 1.2px;
+}
+
+#Contact_Email {
+  position: absolute;
+  margin: 47% 40%;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+#Logout {
+  margin: -79px 1740px;
+  padding: 15px 15px;
+  font-size: 15px;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
+  display: none;
+}
+#Logout:hover {
+  letter-spacing: 1.2px;
+}
+
+#transferToText {
+  margin-top: 50px;
+  margin-left: 40px;
+  color: white;
+}
+#amountText {
+  margin-top: 10px;
+  margin-left: 40px;
+  color: white;
+}
+
+#transferTo {
+  margin-top: 10px;
+  margin-left: 35px;
+  padding: 10px;
+  border-radius: 150px;
+  width: 250px;
+  outline: none;
+  border: none;
+}
+
+#amount {
+  margin-left: 35px;
+  padding: 10px;
+  border-radius: 150px;
+  width: 250px;
+  outline: none;
+  border: none;
+  display: block;
+}
+
+#password_T {
+  margin: 20px 35px;
+}
+
+#transferbtn {
+  display: block;
+  margin: 10px 35px;
+  padding: 15px 15px;
+  font-size: 20px;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#transferbtn:hover {
+  letter-spacing: 1.2px;
+}
+
+#Transfere_view,
+#Transfere_Hide {
+  display: none;
+  margin: 20px 35px;
+  padding: 15px 15px;
+  font-size: 20px;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#Transfere_view:hover,
+#Transfere_Hide {
+  letter-spacing: 1.2px;
+}
+
+#DeleteHistory {
+  margin: 20px 35px;
+  padding: 15px 15px;
+  font-size: 20px;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#DeleteHistory:hover {
+  letter-spacing: 1.2px;
+}
+
+#tableInfo {
+  color: white;
+  margin: 10px -60px;
+}
+
+#tableInfo tr,
+th,
+td {
+  padding-left: 100px;
+  padding-bottom: 20px;
+}
